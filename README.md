@@ -7,8 +7,12 @@ uses the files from the newly generated ~/.cache/wal/ for color schemeing
 
 colors go round and round around the window :)
 
-TBA: Showcase( need help with this yes )
-all credits for the wallpapers go to their original owners,artists, adn anyone who made any contribution to make them. and any copyrighed charachters, etc etc too :).i just loved these wallpapers soo much, and couldnt help use them.If you object to their usage, just put up a request and ill remove them ASAP! 
+TBA: Showcase( need help with this )
+
+all credits for the wallpapers go to their original owners,artists, adn anyone who made any contribution to make them. and any copyrighed charachters, etc etc too :).
+i just loved these wallpapers soo much, and couldnt help use them.If you object to their usage, just put up a request and ill remove them ASAP! 
+removed anyways
+MAKE SURE TO MAKE A FOLDER "~/.config/hypr/wallpapers" AND ADD THE WALLPAPERS THERE
 
 
 Depencencies-
