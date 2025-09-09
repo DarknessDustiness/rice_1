@@ -18,7 +18,10 @@ MAKE SURE TO MAKE A FOLDER "~/.config/hypr/wallpapers" AND ADD THE WALLPAPERS TH
 
 
 Depencencies-
-mpris/mpd/mediaplayer.py (Use anything, python is a problem with nix so i avoided that, and commented it out.Set to use mpris by default, change the commenting for smth else )\n
-swww\n
-cava/n
-pywal16\n
+mpris/mpd/mediaplayer.py (Use anything, python is a problem with nix so i avoided that, and commented it out.Set to use mpris by default, change the commenting for smth else )
+
+swww
+
+cava
+
+pywal16
