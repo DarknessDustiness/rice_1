@@ -1,0 +1,9 @@
+# Tell Git to ignore everything first
+*
+
+# Then, specifically tell Git to NOT ignore your chosen folders
+!hypr/
+!waybar/
+!wofi/
+!.gitingnore
+# Add any other folders you want to track

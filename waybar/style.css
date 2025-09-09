@@ -1,0 +1,139 @@
+/*
+ * Waybar style.css (Version 5)
+ * Corrected and polished dark theme with pywal integration.
+ */
+
+/* -------------------------------------------------------------------------- */
+/* Import the colors from pywal                                               */
+/* -------------------------------------------------------------------------- */
+@import "/home/admin/.cache/wal/colors-waybar.css";
+
+/* -------------------------------------------------------------------------- */
+/* General Waybar and Window Styling                                          */
+/* -------------------------------------------------------------------------- */
+* {
+    /* Define some general settings */
+    font-family: Iosevka Nerd Font, JetBrainsMono Nerd Font, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+window#waybar {
+    background-color: rgba(34, 34, 34, 0.65); /* Dark grey with 0.65 opacity */
+    border-radius: 10px;
+    margin: 2px 0;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Module Styling                                                             */
+/* -------------------------------------------------------------------------- */
+tooltip {
+    background-color: @background;
+    border-radius: 8px;
+    padding: 5px;
+}
+
+/* General module styling with vertical padding for centering */
+#mode,
+#hyprland-mode,
+#hyprland-scratchpad,
+#custom-media,
+#mpris,
+#mpd,
+#idle_inhibitor,
+#pulseaudio,
+#network,
+#custom-bluetooth-manager,
+#power-profiles-daemon,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#battery,
+#clock,
+#tray,
+#window {
+    background-color: @color4;
+    color: @background;
+    border-radius: 8px;
+    padding: 3px 10px; /* Added vertical padding to fix centering */
+    margin: 2px 2px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Left Modules                                                               */
+/* -------------------------------------------------------------------------- */
+#workspaces button {
+    padding: 3px 5px; /* Added vertical padding */
+    color: @color7; /* Default color for inactive workspaces */
+    background-color: transparent;
+    border-bottom: 2px solid transparent; /* subtle indicator */
+    transition: all 0.2s ease-in-out;
+}
+
+#workspaces button.active {
+    color: @color1;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-bottom: 2px solid @color1;
+}
+
+#workspaces button.urgent {
+    color: @color1;
+    background-color: rgba(255, 0, 0, 0.4);
+}
+
+/* -------------------------------------------------------------------------- */
+/* Custom Module Styling                                                      */
+/* -------------------------------------------------------------------------- */
+
+/* Cava module styling with slightly larger dimensions */
+#cava {
+    background-color: @color4;
+    color: @background;
+    border-radius: 8px;
+    padding: 3px 10px; /* Increased horizontal padding and added vertical */
+    margin: 2px 4px;
+    font-size: 16px;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Right Modules (with reduced spacing)                                       */
+/* -------------------------------------------------------------------------- */
+#mpd,
+#idle_inhibitor,
+#pulseaudio,
+#network,
+#custom-bluetooth-manager,
+#power-profiles-daemon,
+#cpu,
+#memory,
+#temperature,
+#backlight,
+#battery,
+#clock,
+#tray {
+    margin: 2px 2px; /* Adjusted: Reduced horizontal margin to 2px */
+}
+
+/* -------------------------------------------------------------------------- */
+/* State-based Styling                                                        */
+/* -------------------------------------------------------------------------- */
+#pulseaudio.muted {
+    color: @color1;
+}
+
+#battery.charging {
+    color: @color2;
+}
+
+#battery.warning {
+    color: @color13;
+}
+
+#battery.critical {
+    color: @color1;
+}
+
+#temperature.critical {
+    color: @color1;
+}
