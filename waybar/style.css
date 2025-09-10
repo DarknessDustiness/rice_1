@@ -56,8 +56,8 @@ tooltip {
     background-color: @color4;
     color: @background;
     border-radius: 8px;
-    padding: 3px 10px; /* Added vertical padding to fix centering */
-    margin: 2px 2px;
+    padding: 5px 10px; /* Added vertical padding to fix centering */
+    margin: 1px 1px;
 }
 
 /* -------------------------------------------------------------------------- */

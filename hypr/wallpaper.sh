@@ -13,8 +13,7 @@ if [ ! -d "$WALLPAPER_DIR" ] || [ -z "$(ls -A "$WALLPAPER_DIR")" ]; then
     exit 1
 fi
 
-pkill swww-daemon
-swww-daemon &
+
 
 RANDOM_WALLPAPER=$(find "$WALLPAPER_DIR" -type f -regex ".*\.\(jpg\|jpeg\|png\|gif\|bmp\)" | shuf -n 1)
 

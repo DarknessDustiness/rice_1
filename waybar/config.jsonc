@@ -7,6 +7,7 @@
     "spacing": 0, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
+	"clock",
         "hyprland/workspaces",
         "hyprland/mode",
         "hyprland/scratchpad",
@@ -32,7 +33,7 @@
         //"hyprland/language",
         "battery",
         "battery#bat2",
-        "clock",
+        //"clock",
         "tray"
     ],
    // Modules configuration
