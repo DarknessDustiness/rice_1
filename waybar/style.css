@@ -53,7 +53,7 @@ tooltip {
 #clock,
 #tray,
 #window {
-    background-color: @color4;
+    background-color: @color13;
     color: @background;
     border-radius: 8px;
     padding: 5px 10px; /* Added vertical padding to fix centering */
@@ -88,7 +88,7 @@ tooltip {
 
 /* Cava module styling with slightly larger dimensions */
 #cava {
-    background-color: @color4;
+    background-color: @color13;
     color: @background;
     border-radius: 8px;
     padding: 3px 10px; /* Increased horizontal padding and added vertical */

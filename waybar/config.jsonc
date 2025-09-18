@@ -7,7 +7,8 @@
     "spacing": 0, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-	"clock",
+	//"clock",
+	"pulseaudio",
         "hyprland/workspaces",
         "hyprland/mode",
         "hyprland/scratchpad",
@@ -16,24 +17,25 @@
 	"mpris"
     ],
     "modules-center": [
-        "hyprland/window"
+        //"hyprland/window"
+	"clock"
     ],
     "modules-right": [
         //"mpd",
         "idle_inhibitor",
-        "pulseaudio",
-        "network",
+        //"pulseaudio",
 	"custom/bluetooth-manager",
         "power-profiles-daemon",
-        "cpu",
-        "memory",
-        "temperature",
         "backlight",
         //"keyboard-state",
         //"hyprland/language",
-        "battery",
         "battery#bat2",
-        //"clock",
+	//"clock",
+	"cpu",
+	"memory",
+	"temperature",
+	"network",
+	"battery",
         "tray"
     ],
    // Modules configuration
@@ -115,10 +117,15 @@
         //   "TelegramDesktop": "$HOME/.local/share/icons/hicolor/16x16/apps/telegram.png"
          }
     },
+    "hyprland/window": {
+        "max-length": 30
+    },
+
     "clock": {
         // "timezone": "America/New_York",
+	"format": "{:%H:%M}",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format-alt": "{:%d-%m-%y}"
     },
     "cpu": {
         "format": "{usage}% ",
@@ -171,7 +178,8 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-wifi": "{signalStrength}% ",
+	//"format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ipaddr}/{cidr} ",
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
@@ -233,6 +241,7 @@
  	"format": "  {status_icon} {dynamic}",
         "interval": 1,
         "dynamic-len": 70,
+	"max-length":40,
 	"status-icons": {
 		"playing": "▶",
 		"paused": "⏸",
